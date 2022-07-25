@@ -1,3 +1,12 @@
+                                                                        Задание:
+Имеется app.jar файл.
+Для его запуска используется команда java -jar app.jar some_out_files “Service is working!”.
+Напишите простой демон для systemd (Linux), который будет поддерживать работу приложения и перезапускать его в случае выхода из стоя процесса. 
+Необходимо сделать защиту от зацикливания перезапусков, когда процесс постоянно выходит из строя.
+
+
+                                                                          Решение:
+
 1) Создаём папку java в домашней директории и копируем туда файл app.jar (Напрример, на моем ПК /home/administrator/java/app.jar)
 2) В файле java.service подправляем путь для app.jar и some_out_files (У меня /home/administrator/java/app.jar /home/administrator/java/some_out_file)
 3) Файл java.service нужно скопировать в папку etc/systemd/system
