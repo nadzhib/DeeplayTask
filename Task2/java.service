@@ -13,6 +13,4 @@ ExecStop=/bin/kill -15 $MAINPID
 
 [Install]
 WantedBy=multi-user.target
-© 2022 GitHub, Inc.
-Terms
 
